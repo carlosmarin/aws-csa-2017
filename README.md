@@ -951,7 +951,7 @@ Collection = Table, Document = Row, Keys-Value Pairs = Fields
 
 ### Data Warehousing
 
-OLTP (pulls out specific / narrow record set) vs OLAP – (pulls in large number of records). It used different architecture and infrastructure layer.  Differ in terms of queries run on top of data. OLAP is more about aggregation.
+OLTP ("Transaction", pulls out specific / narrow record set) vs OLAP – ("Analytics", pulls in large number of records). It used different architecture and infrastructure layer.  Differ in terms of queries run on top of data. OLAP is more about aggregation.
 
 ### ElastiCache
 
@@ -1051,17 +1051,17 @@ OLTP systems.
 
   - Stored on SSDs
 
-  - Stored on 3 geographically distinct DCs (not AZs). Built in redundancy
+  - Stored on 3 geographically distinct DCs (not AZs). Built-in redundancy
 
   - Consistency
 
-1. Eventual consistent reads - Consistency reached up to 1 second (default)
+1. Eventual consistent reads - Consistency reached up to 1 second (default) (best read performance)
 
-2. Strongly Consistent reads - Consistency reached after writes to all copies are completed. <1 second
+2. Strongly Consistent reads - Consistency reached after writes to all copies are completed. < 1 second
 
 Select type based on application needs
 
-  - Pricing – Write Capacity Units and Read Capacity Units ($/hr.). Also Storage cost per month. You provision capacity in units/second. It can scale on the fly. Provisioned capacity.
+  - Pricing – Write Capacity Units and Read Capacity Units ($/hr * 50r/10w units), plus Storage fee per Gb/month. You provision capacity in units/second. It can scale on the fly. Provisioned capacity.
 
   - Dynamo DB – Expensive for Writes. Cheap for Reads. Important point v/s RDS.
 
@@ -1195,7 +1195,7 @@ No Free Tier usage available. Also available only in select regions. Takes sligh
 
   - Dynamo DB v/s RDS
 
-If you want push button scaling, without any downtown, you will always want to use DynamoDB.
+If you want push button scaling, without any downtime, you will always want to use DynamoDB.
 
 With RDS scaling is not so easy, you have to use a bigger instance or add read replicas (manual process).
 
@@ -1480,7 +1480,7 @@ EC2 instances pull SQS messages from a standard SQS queue on a FIFO (First In Fi
 > This section needs additional information
 
 
-# Preparing for Exam – While Paper Reviews
+# Preparing for Exam – White Paper Reviews
 
 ## Overview of Amazon Web Services
 
