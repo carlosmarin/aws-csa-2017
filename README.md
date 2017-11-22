@@ -1484,7 +1484,7 @@ EC2 instances pull SQS messages from a standard SQS queue on a FIFO (First In Fi
 
 ## Overview of Amazon Web Services
 
-  - Refer to [AWS 10000 Feet Overview](#heading=h.2et92p0) section. This white paper is essentially a recap of that with some additional details
+  - Refer to [AWS 10000 Feet Overview](#aws-10000-feet-overview) section. This white paper is essentially a recap of that with some additional details
 
 ## Overview of Security Processes
 
