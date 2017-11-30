@@ -620,6 +620,8 @@ Magnetic Drives
 - You cannot mount 1 EBS volume to multiple EC2 Instances. Use EFS instead.
 
 - EBS Root Volumes can be encrypted on custom AMIs only. Not on the default available AMIs. To encrypt root volumes, create a new AMI and encrypt root volume. You can also encrypt using 3rd party software like Bit Locker. Additional volumes attached to EC2 instance can be encrypted.
+- To encrypt, you will need to launch the AMI, create an image from it, and then use that image to create the encrypted EBS boot volume (this applies, for example, to Windows AMIs). The resulting encrypted AMI will be private; you cannot share it with another AWS account.
+
 
 - EC2 – 1 subnet equals 1 Availability Zone.
 
