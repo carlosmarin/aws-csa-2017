@@ -805,7 +805,7 @@ The following are examples of problems that can cause instance status checks to 
 
   - A trick is to assign policies to the existing role. This will avoid the need to create new instances.
 
-  - Role assigned to instance is stuck to the lifetime of the instance – until you delete the role. Easier to modify existing role by adding / removing policies.
+  - Role assigned to instance used to be stuck to the lifetime of the instance (before update ~ 2017?) – until you delete the role. Easier to modify existing role by adding / removing policies. In 2017, you can use "Instance Settings" -> "Attach / Replace IAM Role", this simply updates the Role on the EC2.
 
   - Roles are universal. Applicable to all regions.
 
